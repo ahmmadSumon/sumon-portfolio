@@ -16,7 +16,7 @@ const info = [
   {
     icon: <FaEnvelope/>,
     title: "Email",
-    description: "arifahmmadsumon@gamil.com",
+    description: "arifahmmadsumon@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt/>,
@@ -38,7 +38,7 @@ const Contact = () => {
           <div className='xl:w-[54%] order-2 xl:order-none'>
           <form className='flex flex-col gap-6 p-10 bg-[#27272c]/30 rounded-xl' >
             <h3 className='text-4xl text-accent'>Let's work together</h3>
-            <p className='text-white/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus earum perspiciatis debitis sequi dolorum ea laudantium sunt exercitationem, ullam asperiores.</p>
+            <p className='text-white/60'> I'm passionate about creating impactful and innovative solutions. Let's collaborate to bring your ideas to life and achieve exceptional results..</p>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             <Input type="text" placeholder="Firstname" />
                 <Input type="text" placeholder="Lastname" />
@@ -52,8 +52,8 @@ const Contact = () => {
                   <SelectGroup>
                     <SelectLabel> Select a service </SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="cst">Web Design</SelectItem>
+                    <SelectItem value="mst">Figma to HTML/ PSD to HTML</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </SelectTrigger>

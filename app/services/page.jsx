@@ -9,27 +9,30 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellendus, quaerat mollitia itaque ab maiores similique odio voluptatem impedit blanditiis porro tempore at dolorum? Autem.",
+    description: "I specialize in creating responsive and dynamic front-end solutions that bring websites to life. From crafting intuitive user interfaces to optimizing performance, I handle all aspects of front-end development to ensure your website is fast, modern, and engaging.",
     href: ""
   },
   {
     num: "02",
-    title: "UI/UX",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellendus, quaerat mollitia itaque ab maiores similique odio voluptatem impedit blanditiis porro tempore at dolorum? Autem.",
+    title: "Web Design",
+    description: "I create visually appealing and user-friendly designs that captivate audiences and enhance the user experience. My approach to web design combines creativity with functionality, ensuring that every website is not only aesthetically pleasing but also intuitive and easy to navigate.",
     href: ""
   },
+  
   {
     num: "03",
-    title: "Logo Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellendus, quaerat mollitia itaque ab maiores similique odio voluptatem impedit blanditiis porro tempore at dolorum? Autem.",
+    title: "Figma to Code Design",
+    description: "I transform Figma designs into pixel-perfect, responsive code, ensuring seamless translation from design to a functional website.",
     href: ""
-  },
+  }
+  ,
   {
     num: "04",
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellendus, quaerat mollitia itaque ab maiores similique odio voluptatem impedit blanditiis porro tempore at dolorum? Autem.",
+    title: "PSD to HTML",
+    description: "I convert PSD designs into clean, responsive HTML code, ensuring accurate representation of your designs across all devices.",
     href: ""
-  },
+  }
+  ,
 ];
 
 const Services = () => {

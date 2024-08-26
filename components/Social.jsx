@@ -1,23 +1,28 @@
 "use client"
-import Link from 'next/link'
 import React from 'react'
-import {FaGithub, FaLinkedinIn, FaYoutube, FaTwitter} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+
 const socials = [
-    {icon:<FaGithub/>, path:""},
-    {icon:<FaLinkedinIn />, path:""},
-    {icon:<FaYoutube/>, path:""},
-    {icon:<FaTwitter/>, path:""},
+  { icon: <FaGithub />, path: "https://github.com/ahmmadSumon" },
+  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/arif-ahmmad-sumon-4177bb27b/" },
+  { icon: <FaFacebookF />, path: "https://www.facebook.com/arifahmed.sumon" },
+  { icon: <FaWhatsapp />, path: "https://wa.me/+8801751260010" },
 ]
-const Social = ({containerstyles, iconStyles}) => {
+
+const Social = ({ containerstyles, iconStyles }) => {
   return (
     <div className={containerstyles}>
-      {socials.map((item, index) => {
-        return (
-            <Link href={item.path} key={index} className={iconStyles}>
-                {item.icon}
-            </Link>
-        )
-      })}
+      {socials.map((item, index) => (
+        <a
+          href={item.path}
+          key={index}
+          className={iconStyles}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.icon}
+        </a>
+      ))}
     </div>
   )
 }

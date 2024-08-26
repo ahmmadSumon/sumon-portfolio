@@ -47,7 +47,7 @@ const CircularTextWithButton = ({ duration = 10, buttonText = 'Hire Me' }) => {
             
             {/* Button placed in the center of the circular text */}
             <button className="absolute bg-accent text-white px-4 py-2 rounded-full focus:outline-none">
-                <Link className="text-decoration-none font-bold text-primary" href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your Website">
+                <Link className="text-decoration-none font-bold text-primary" href='/contact'>
                     {buttonText}
                 </Link>
             </button>

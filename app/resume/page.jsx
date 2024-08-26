@@ -10,7 +10,7 @@ import {SiTailwindcss, SiNextdotjs} from "react-icons/si"
 
 const about ={
   title: "About Me",
-  description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates officia omnis pariatur quasi ullam dolorem adipisci placeat libero animi beatae?",
+  description:"I am a dedicated front-end developer with over 3 years of experience in crafting responsive, user-friendly websites. My passion for technology drives me to continually enhance my skills and deliver exceptional digital experiences.",
   info: [
     {
       fieldName: "Name",
@@ -51,29 +51,25 @@ const about ={
 const experience ={
   icon:"",
   title: "My Experience",
-  description:" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, consequatur? Magni itaque unde iusto fugiat debitis blanditiis temporibus quaerat architecto.",
+  description:"I have hands-on experience in front-end development through internships, freelance projects, and previous roles. My journey reflects a commitment to delivering high-quality solutions and continuous professional growth.",
   items: [
     {
-      company: "Wtech solutions",
-      position:"Front-End developer ",
-      duration:"2023-present"
+      company: "Qtec solutions",
+      position:"Front-End developer Intern ",
+      duration:"2024-present"
     },
     {
-      company: "Freeance",
+      company: "Freelance",
       position:"Front-End developer ",
+      duration:"2023-2024"
+    },
+    
+    {
+      company: "Metal Agro Ltd",
+      position:" Executive ",
       duration:"2023"
     },
-    {
-      company: "Metal Prvt Ltd",
-      position:"Business Developement Officer",
-      duration:"2022"
-    }
-    ,
-    {
-      company: "Freeance",
-      position:"Front-End developer ",
-      duration:"2023"
-    },
+
     {
       company: "Metal Prvt Ltd",
       position:"Business Developement Officer",
@@ -86,41 +82,37 @@ const experience ={
 const education = {
   icon:"",
   title: "My Education",
-  description:" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, consequatur? Magni itaque unde iusto fugiat debitis blanditiis temporibus quaerat architecto.",
+  description:"I have a solid foundation in front-end development, gained through hands-on experience and formal education. My journey reflects a strong commitment to continuous learning and growth in the tech industry.",
   items: [
     {
-      institution: "Wtech solutions",
-      degree:"Front-End developer ",
-      duration:"2023-present"
+      institution: "Hajee Mohammad Danesh Science and Technology University ",
+      degree:"Bsc in Agricultural Engineering ",
+      duration:"2016-2021"
     },
     {
-      institution: "Freeance",
-      degree:"Front-End developer ",
-      duration:"2023"
+      institution: "Hajee Mohammad Danesh Science and Technology University ",
+      degree:"Msc in Agricultural Extension",
+      duration:"2022-2024"
     },
     {
       
-      institution: "Metal Prvt Ltd",
-      degree:"Business Developement Officer",
-      duration:"2022"
+      institution: "Cantonment Public School and College, BUSMS",
+      degree:"HSC",
+      duration:"2014-15"
     }
     ,
     {
-      institution: "Freeance",
-      degree:"Front-End developer ",
-      duration:"2023"
+      institution: "Cantonment Public School and College, BUSMS",
+      degree:"SSC",
+      duration:"2012-13"
     },
-    {
-      institution: "Metal Prvt Ltd",
-      degree:"Business Developement Officer",
-      duration:"2022"
-    }
+    
 
   ]
 }
 const skills = {
   title:"My skills",
-  description:" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, consequatur? Magni itaque unde iusto fugiat debitis blanditiis temporibus quaerat architecto.",
+  description: "I have expertise in a range of front-end technologies and tools, allowing me to build modern, responsive websites. My skill set includes a strong foundation in HTML, CSS, and JavaScript, along with proficiency in popular frameworks and design tools.",
   skillList: [
     {
       icon:<FaHtml5/>,
