@@ -34,8 +34,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
-      <div className='container mx-auto'>
+    <section className='min-h-[80vh]  flex flex-col justify-center py-12 xl:py-0'>
+      <div className='container mx-auto mt-40 '>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
