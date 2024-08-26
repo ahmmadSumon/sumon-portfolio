@@ -85,24 +85,24 @@ const education = {
   description:"I have a solid foundation in front-end development, gained through hands-on experience and formal education. My journey reflects a strong commitment to continuous learning and growth in the tech industry.",
   items: [
     {
-      institution: "Hajee Mohammad Danesh Science and Technology University ",
+      institution: "HSTU (হাবিপ্রবি), Dinajpur ",
       degree:"Bsc in Agricultural Engineering ",
       duration:"2016-2021"
     },
     {
-      institution: "Hajee Mohammad Danesh Science and Technology University ",
+      institution: "HSTU (হাবিপ্রবি), Dinajpur",
       degree:"Msc in Agricultural Extension",
       duration:"2022-2024"
     },
     {
       
-      institution: "Cantonment Public School and College, BUSMS",
+      institution: "CPSC BUSMS, Parbatipur",
       degree:"HSC",
       duration:"2014-15"
     }
     ,
     {
-      institution: "Cantonment Public School and College, BUSMS",
+      institution: "CPSC BUSMS, Parbatipur",
       degree:"SSC",
       duration:"2012-13"
     },
