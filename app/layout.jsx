@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${jetbrainsMono.variable} relative`}>
         {/* Move CircularTextWithButton to the top */}
-        <div className="absolute top-[60vh] left-20 m-10 transform -translate-x-1/2 z-10 hidden xl:block">
+        <div className="absolute  top-[60vh]  left-20 m-10 transform -translate-x-1/2 z-10 hidden xl:block">
           <CircularTextWithButton />
         </div>
         

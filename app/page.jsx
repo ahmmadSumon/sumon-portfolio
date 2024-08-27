@@ -2,6 +2,7 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 export default function Home() {
   return (
@@ -13,7 +14,12 @@ export default function Home() {
             <h1 className="h1"> Hello I'm <br /> <span className="text-accent"> Ahmmad Sumon</span> </h1>
             <p className="max-w-[500px] mb-9 text-white/80">Welcome! I'm a frontend web developer specializing in  ReactJs, and Next.js. With creativity and technical prowess, I deliver stunning, responsive websites tailored to your needs. Let's collaborate to turn your digital vision into reality!</p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="flex uppercase items-center gap-2"> <span>Download CV</span> <FiDownload className="text-xl"/> </Button>
+              <Button variant="outline" size="lg" className="flex uppercase items-center ">
+                <Link href="/cv" className="flex uppercase items-cente gap-2">
+                
+                 <span>Download Resume</span> <FiDownload className="text-xl"/>
+                 </Link>
+                  </Button>
               <div className="mb-8 xl:mb-0 "> <Social containerstyles="flex gap-6" iconStyles= "w-9 h-9 border border-accent rounded-full flex items-center justify-center text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" /> </div>
             </div>
           </div>
