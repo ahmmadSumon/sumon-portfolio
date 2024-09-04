@@ -4,6 +4,8 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from './ui/button'
+
 const links = [
     {
     name:"home",
@@ -49,6 +51,9 @@ const MobileNav = () => {
             </Link>
           )
           })}
+          <div>
+          <Button variant="outline" size="lg" className="flex items-center ">Hire me</Button>
+          </div>
         </nav>
         </SheetContent>
       </SheetTrigger>

@@ -1,3 +1,4 @@
+"use client"
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -12,7 +13,22 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Frontend Web Developer</span>
             <h1 className="h1"> Hello I'm <br /> <span className="text-accent"> Ahmmad Sumon</span> </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">Welcome! I'm a frontend web developer specializing in  ReactJs, and Next.js. With creativity and technical prowess, I deliver stunning, responsive websites tailored to your needs. Let's collaborate to turn your digital vision into reality!</p>
+            <p className="max-w-[500px] mb-9 text-white/80">
+  Welcome! I'm a frontend web developer specializing in
+  <span 
+    className="text-accent font-semibold pl-2 cursor-pointer"
+    onClick={() => window.open('https://reactjs.org/', '_blank', 'noopener,noreferrer')}
+  >
+    ReactJs
+  </span>, and 
+  <span 
+    className="text-accent font-semibold pl-2 cursor-pointer"
+    onClick={() => window.open('https://nextjs.org/', '_blank', 'noopener,noreferrer')}
+  >
+    Next.js
+  </span>.
+  With creativity and technical prowess, I deliver stunning, responsive websites tailored to your needs. Let's collaborate to turn your digital vision into reality!
+</p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="flex uppercase items-center ">
                 <Link href="/cv" className="flex uppercase items-cente gap-2">
