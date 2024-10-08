@@ -29,6 +29,22 @@ const projects = [
   {
     num: "02",
     category: "frontend",
+    title: "Travel Website",
+    description: "A modern travel website showcasing the best of Bangladesh, featuring destination guides, travel itineraries, and booking options. Designed with a clean and engaging interface for a seamless user experience.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" },
+      {name:'GSAP'},
+      {name:"Lenis Smoot Scroll"}
+    ],
+    image: '/image/travel.png',
+    live: 'https://smntravelx-m3wm.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/smntravelx'
+  },
+  {
+    num: "03",
+    category: "frontend",
     title: "Restaurant Website",
     description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
     stack: [
@@ -41,7 +57,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/resturent/tree/main'
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Law Service",
     description: "A professional law service website designed to provide information about legal services, showcase case studies, and facilitate client interactions. Features a clean, responsive design for an optimal user experience.",
@@ -55,7 +71,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/irs-strat/tree/main'
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Martyre Website",
     description: "A memorial website dedicated to the students who tragically lost their lives during the 2024 protests in Bangladesh. The site honors their memory, provides information about the events, and offers resources for support and remembrance.",
@@ -67,7 +83,8 @@ const projects = [
     image: '/image/sohid.png',
     live: 'https://shohid-nextjs.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/shohidNextjs/tree/main'
-  }
+  },
+  
 ]
 
 const Work = () => {
