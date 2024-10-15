@@ -22,7 +22,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "JavaScript" }
     ],
-    image: '/image/beti.png',
+    image: '/image/21.png',
     live: 'https://nextjs-ecom-kappa.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nextjs-ecom/tree/main'
   },
@@ -84,7 +84,23 @@ const projects = [
     live: 'https://shohid-nextjs.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/shohidNextjs/tree/main'
   },
-  
+  {
+    num: "06",
+    category: "frontend",
+    title: "Agency Website(On Going)",
+    description: "Learn with Trends is an Online Marketing Agency. The main goal of this site is to provide quality Digital Marketing Services. You can get tutorials, tips, courses, tools, and other resources that allow anyone to establish online and master digital marketing based on real case studies and deep research.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" },
+      { name: "Framer motion" },
+      { name: "Acernity UI" },
+      
+    ],
+    image: '/image/learn.png',
+    live: 'https://learnwithtrends.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/learnwithtrends'
+  },
 ]
 
 const Work = () => {
