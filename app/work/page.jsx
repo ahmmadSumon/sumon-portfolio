@@ -115,6 +115,20 @@ const projects = [
     live: 'https://nextjs-ecom-kappa.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nextjs-ecom/tree/main'
   },
+  {
+    num: "08",
+    category: "frontend",
+    title: "Social Worker",
+    description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" }
+    ],
+    image: '/image/12.png',
+    live: 'https://nur-web.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/nur-web'
+  },
 ]
 
 const Work = () => {
