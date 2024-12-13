@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import Nav from './Nav'
 import MobileNav from './MobileNav'
+import { ModeToggle } from './ModeToggle'
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         </Link>
         <div className='hidden xl:flex items-center gap-8'>
           <Nav />
+          <ModeToggle/>
           <Link href='/contact'>
             <Button variant="outline" size="lg" className="flex items-center ">Hire me</Button>
           </Link>

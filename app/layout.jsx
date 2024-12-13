@@ -6,7 +6,8 @@ import PageTransition from '@/components/PageTransition';
 import StairTransition from '@/components/StairTransition';
 import Footer from '@/components/Footer';
 import CircularTextWithButton from '../components/CircularTextBtn'; // Import the CircularTextWithButton component
-
+import { ThemeProvider } from '@/components/theme-provider';
+ThemeProvider
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
@@ -30,7 +31,14 @@ export default function RootLayout({ children }) {
         <Header />
         <StairTransition />
         <PageTransition>
-          {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
         </PageTransition>
       </body>
     </html>
