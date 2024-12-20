@@ -52,9 +52,9 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "JavaScript" }
     ],
-    image: '/image/coffee.png',
-    live: 'https://resturent-tau.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/resturent/tree/main'
+    image: '/image/res.png',
+    live: 'https://restaurent-nextjs.vercel.app/', 
+    github: 'https://github.com/ahadSumon/resturent/tree/main'
   },
   {
     num: "04",
@@ -128,6 +128,19 @@ const projects = [
     image: '/image/12.png',
     live: 'https://nur-web.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nur-web'
+  },{
+    num: "09",
+    category: "frontend",
+    title: "Restaurant Website",
+    description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" }
+    ],
+    image: '/image/coffee.png',
+    live: 'https://resturent-tau.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/resturent/tree/main'
   },
 ]
 
