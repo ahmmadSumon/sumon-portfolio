@@ -142,7 +142,7 @@ const Page = () => {
               <div className='flex justify-between'>
               
               <p className="work-text  font-semibold">
-              <Link href="https://nextjs-ecom-kappa.vercel.app/">
+              <Link href="https://ecommercenextjs-weld.vercel.app/">
               Link : E-commerce
               </Link>
                 
@@ -162,18 +162,18 @@ const Page = () => {
                 <p className="job">Frontend</p>
                 <p className="date">NextJs, Js, Tailwind</p>
               </div>
-              <h2 className="company-name">E-commerce Website</h2>
+              <h2 className="company-name">Restaurent Website</h2>
               <div className='flex justify-between'>
               
               <p className="work-text  font-semibold">
-              <Link href="https://nextjs-ecom-kappa.vercel.app/">
-              Link : E-commerce
+              <Link href="https://restaurent-nextjs.vercel.app/">
+              Link : Restaurent
               </Link>
                 
                 </p>
                 <p className="work-text font-semibold">
-                <Link href="https://nextjs-ecom-kappa.vercel.app/">
-                Source code: E-commerce
+                <Link href="https://restaurent-nextjs.vercel.app/">
+                Source code: Restaurent
               </Link>
                
                 </p>
