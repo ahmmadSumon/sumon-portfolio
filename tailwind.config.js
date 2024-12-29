@@ -1,34 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: ["class"], // Enable dark mode with the "class" strategy
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    './pages/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+    './app/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
-  prefix: "",
+  prefix: "", // No prefix by default
   theme: {
     container: {
-      center: true,
-      padding: "15px",
+      center: true, // Centers container content
+      padding: "15px", // Adds padding around the container
     },
     screens: {
       sm: '640px',
       md: '768px',
-      lg: "968px",
-      xl:"1200px"
+      lg: "960px", // Corrected to standard breakpoint
+      xl: "1200px",
     },
-    fontFamily:{
-      primary: "var(--font-jetbrainsMono)"
+    fontFamily: {
+      primary: "var(--font-jetbrainsMono)", // Ensure --font-jetbrainsMono is defined in your CSS
     },
     extend: {
-      colors:{
-      primary: '#1c1c22',
-      accent: {
-        DEFAULT: "#06D001",
-        hover:'#00e187',
-      }
+      colors: {
+        primary: '#1c1c22', // Custom primary color
+        accent: {
+          DEFAULT: "#06D001", // Accent color
+          hover: '#00e187', // Accent hover color
+        },
       },
       keyframes: {
         "accordion-down": {
@@ -41,10 +41,10 @@ module.exports = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.2s ease-out", // Accordion down animation
+        "accordion-up": "accordion-up 0.2s ease-out", // Accordion up animation
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [require("tailwindcss-animate")], // Ensure this plugin is installed
+};
