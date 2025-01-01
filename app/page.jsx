@@ -9,7 +9,7 @@ import { FiDownload } from "react-icons/fi";
 export default function Home() {
   const handleDownloadAndNavigate = () => {
     // Trigger resume download
-    const resumeLink = "https://drive.google.com/uc?export=download&id=1PMhC_SAEScQXZ13lLdYDbaS2Erudrg20"; // Replace with your Google Drive file link
+    const resumeLink = "https://drive.google.com/uc?export=download&id=1yDgMT0Wj1e2lZvRwvWGlR53n52GPttez"; // Replace with your Google Drive file link
     window.open(resumeLink, "_blank", "noopener,noreferrer");
     // Navigate to CV page
     window.location.href = "/cv";
