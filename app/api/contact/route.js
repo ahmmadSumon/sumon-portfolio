@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
-import Contact from "@/models/Contact";
+import { dbConnect } from "../../../lib/dbConnect";
+import Contact from "../../../models/contact";
 
 export async function POST(req) {
   try {
-    await connectDB();
+    await dbConnect();
     const body = await req.json();
     const { firstname, lastname, email, phone, service, message } = body;
 
