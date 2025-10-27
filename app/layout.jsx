@@ -6,7 +6,8 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import CircularTextWithButton from "../components/CircularTextBtn";
 import { ThemeProvider } from "@/components/theme-provider";
-import LightRays from "@/components/LightRays"; // ✅ Import LightRays
+import LightRays from "@/components/LightRays";
+import MobileHyperspeedWrapper from "@/components/MobileHyperspeedWrapper"; // ✅ Added
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -22,15 +23,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} relative `}>
-        {/* ✅ Global LightRays Background */}
+      <body className={`${jetbrainsMono.variable} relative`}>
+        {/* ✅ Backgrounds */}
+        {/* Desktop background */}
         <div
-          className="absolute inset-0 -z-10"
+          className="absolute inset-0 -z-10 hidden md:block"
           style={{
             width: "100%",
             height: "100%",
             overflow: "hidden",
-            pointerEvents: "none", // Prevents background from blocking clicks
+            pointerEvents: "none",
           }}
         >
           <LightRays
@@ -46,6 +48,9 @@ export default function RootLayout({ children }) {
             className="custom-rays"
           />
         </div>
+
+        {/* ✅ Mobile Hyperspeed Background */}
+        <MobileHyperspeedWrapper />
 
         {/* Floating circular button */}
         <div className="absolute top-[60vh] left-20 m-10 transform -translate-x-1/2 z-10 hidden xl:block">
