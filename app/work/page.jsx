@@ -14,6 +14,38 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: "01",
+    category: "Full Stack",
+    title: "Dream Team Online Earning",
+    description: "Dream Team Online Earning is the best platform for online income, helping you turn your skills into a source of digital success. With hard work and patience, you can earn 15,000–20,000৳ or more every month. Join today and start building your own success story in the online world.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Mongodb" },
+      { name: "Next Auth"},
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" }
+    ],
+    image: '/image/dream.png',
+    live: 'https://www.dreamteamonlineearning.com/', 
+    github: 'https://github.com/ahmmadSumon'
+  },
+ {
+    num: "02",
+    category: "Full Stack",
+    title: "Cholo Dei Feedback",
+    description: "An interactive anonymous feedback platform that allows anyone to share their honest thoughts, opinions, or messages freely and securely. Built with a focus on privacy and simplicity, it provides a safe space for open communication and genuine feedback through a shareable link.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Mongodb" },
+      { name: "Next Auth"},
+      { name: "Tailwind CSS" },
+      { name: "JavaScript" }
+    ],
+    image: '/image/mystry.png',
+    live: 'https://cholo-dei-feedback.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/cholo-dei-feedback'
+  },
+  {
+    num: "03",
     category: "frontend",
     title: "E-commerce Website",
     description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
@@ -27,7 +59,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/ecommercenextjs'
   },
   {
-    num: "02",
+    num: "04",
     category: "frontend",
     title: "Restaurant Website",
     description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
@@ -41,7 +73,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/restaurent-nextjs'
   },
     {
-    num: "03",
+    num: "05",
     category: "frontend",
     title: "Ghee Bazar",
     description: "A modern and responsive Ghee Bazar e-commerce website designed to showcase premium ghee products, provide smooth online shopping, and highlight product benefits. Built with interactive animations using GSAP and fully optimized for all devices to ensure a seamless shopping experience.",
@@ -57,7 +89,7 @@ const projects = [
   },
 
     {
-    num: "04",
+    num: "06",
     category: "frontend",
     title: "GYM Website",
     description: "A modern and responsive GYM website designed to promote fitness services, display class schedules, and highlight gym facilities. Built with interactive animations using GSAP and optimized for all devices to ensure a seamless user experience.",
@@ -72,7 +104,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/gym-full-stack'
   },
   {
-    num: "05",
+    num: "07",
     category: "frontend",
     title: "Travel Website",
     description: "A modern travel website showcasing the best of Bangladesh, featuring destination guides, travel itineraries, and booking options. Designed with a clean and engaging interface for a seamless user experience.",
@@ -89,7 +121,7 @@ const projects = [
   },
   
   {
-    num: "06",
+    num: "08",
     category: "frontend",
     title: "Law Service",
     description: "A professional law service website designed to provide information about legal services, showcase case studies, and facilitate client interactions. Features a clean, responsive design for an optimal user experience.",
@@ -103,7 +135,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/irs-strat/tree/main'
   },
   {
-    num: "07",
+    num: "09",
     category: "frontend",
     title: "Martyre Website",
     description: "A memorial website dedicated to the students who tragically lost their lives during the 2024 protests in Bangladesh. The site honors their memory, provides information about the events, and offers resources for support and remembrance.",
@@ -117,7 +149,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/shohidNextjs/tree/main'
   },
   {
-    num: "08",
+    num: "10",
     category: "frontend",
     title: "Agency Website(On Going)",
     description: "Learn with Trends is an Online Marketing Agency. The main goal of this site is to provide quality Digital Marketing Services. You can get tutorials, tips, courses, tools, and other resources that allow anyone to establish online and master digital marketing based on real case studies and deep research.",
@@ -134,7 +166,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/learnwithtrends'
   },
   {
-    num: "09",
+    num: "11",
     category: "frontend",
     title: "E-commerce Website",
     description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
@@ -148,7 +180,7 @@ const projects = [
     github: 'https://github.com/ahmmadSumon/nextjs-ecom/tree/main'
   },
   {
-    num: "10",
+    num: "12",
     category: "frontend",
     title: "Social Worker",
     description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
@@ -161,7 +193,7 @@ const projects = [
     live: 'https://nur-web.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nur-web'
   },{
-    num: "11",
+    num: "13",
     category: "frontend",
     title: "Restaurant Website",
     description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
