@@ -232,14 +232,17 @@ const Work = () => {
               <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
               <h3 className='text-[36px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize'>{project.title}</h3>
               <p className='text-white/60'>{project.description}</p>
-              <ul className='flex gap-4'>
-                {project.stack.map((item, index) => (
-                  <li key={index} className='text-xl text-accent'>
-                    {item.name}
-                    {index !== project.stack.length - 1 && ","}
-                  </li>
-                ))}
-              </ul>
+             <ul className='flex flex-wrap gap-2 sm:gap-3'>
+  {project.stack.map((item, index) => (
+    <li 
+      key={index} 
+      className='text-sm sm:text-base md:text-lg text-accent whitespace-nowrap'
+    >
+      {item.name}
+      {index !== project.stack.length - 1 && ","}
+    </li>
+  ))}
+</ul>
               <div className='border border-white/20'></div>
               <div className='flex items-center gap-4'>
                 <Link href={project.live} target="_blank" rel="noopener noreferrer">

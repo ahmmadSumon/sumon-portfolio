@@ -1,30 +1,26 @@
-import { NextResponse } from "next/server";
-import { dbConnect } from "../../../lib/dbConnect";
+import { dbConnect } from "@/lib/dbConnect";
 import Contact from "../../../models/contact";
 
 export async function POST(req) {
   try {
     await dbConnect();
-    const body = await req.json();
-    const { firstname, lastname, email, phone, service, message } = body;
+    const data = await req.json();
+    const contact = await Contact.create(data);
 
-    if (!firstname || !lastname || !email || !phone || !service || !message) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
-    }
-
-    const newContact = new Contact({
-      firstname,
-      lastname,
-      email,
-      phone,
-      service,
-      message,
-    });
-
-    await newContact.save();
-    return NextResponse.json({ success: true, message: "Message saved successfully!" });
+    return Response.json({ success: true, contact });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error: "Failed to save message" }, { status: 500 });
+    console.error("Error saving contact:", error);
+    return Response.json({ error: "Failed to save message" }, { status: 500 });
+  }
+}
+
+// 🧾 Optional: Get all messages (for admin dashboard)
+export async function GET() {
+  try {
+    await dbConnect();
+    const messages = await Contact.find().sort({ createdAt: -1 });
+    return Response.json({ messages });
+  } catch (error) {
+    return Response.json({ error: "Failed to fetch messages" }, { status: 500 });
   }
 }
