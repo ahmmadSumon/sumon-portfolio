@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const CircularTextWithButton = ({ duration = 10, buttonText = 'Hire Me' }) => {
     const textRef = useRef(null);
-    const text = '- Arif - Frontend Developer';
+    const text = '- Arif - Fullstack Developer';
 
     useEffect(() => {
         if (textRef.current && text) {
