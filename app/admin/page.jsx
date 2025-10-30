@@ -59,7 +59,7 @@ export default function AdminPage() {
   }
 
   return (
-    <section className="p-8">
+    <section className="p-8 mt-20">
       <h1 className="text-3xl font-semibold mb-6 text-accent">
         Admin Dashboard - Contact Messages
       </h1>
