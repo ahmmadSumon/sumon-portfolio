@@ -75,9 +75,7 @@ export default function Home() {
               >
                 MongoDB
               </span>{" "}
-              for modern, scalable databases. From UI to API — I bring complete,
-              high-performance web solutions to life. Let’s collaborate to make your
-              digital vision a reality!
+              for modern, scalable databases. From UI to API — I bring complete, high-performance web solutions to life. Let’s collaborate to make your digital vision a reality!
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
