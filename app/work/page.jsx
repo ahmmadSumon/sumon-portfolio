@@ -16,47 +16,53 @@ const projects = [
     num: "01",
     category: "Full Stack",
     title: "Dream Team Online Earning",
-    description: "Dream Team Online Earning is the best platform for online income, helping you turn your skills into a source of digital success. With hard work and patience, you can earn 15,000–20,000৳ or more every month. Join today and start building your own success story in the online world.",
+    description:
+      "Dream Team Online Earning is the best platform for online income, helping you turn your skills into a source of digital success. With hard work and patience, you can earn 15,000–20,000৳ or more every month. Join today and start building your own success story in the online world.",
     stack: [
       { name: "Next.js" },
       { name: "Mongodb" },
-      { name: "Next Auth"},
+      { name: "Next Auth" },
       { name: "Tailwind CSS" },
-      { name: "JavaScript" }
+      { name: "JavaScript" },
     ],
-    image: '/image/dream.png',
-    live: 'https://www.dreamteamonlineearning.com/', 
-    github: 'https://github.com/ahmmadSumon'
+    image: "/image/dream.png",
+    imageMobile: "/image/dream-m.png",
+    live: "https://www.dreamteamonlineearning.com/",
+    github: "https://github.com/ahmmadSumon",
   },
- {
+  {
     num: "02",
     category: "Full Stack",
     title: "Cholo Dei Feedback",
-    description: "An interactive anonymous feedback platform that allows anyone to share their honest thoughts, opinions, or messages freely and securely. Built with a focus on privacy and simplicity, it provides a safe space for open communication and genuine feedback through a shareable link.",
+    description:
+      "An interactive anonymous feedback platform that allows anyone to share their honest thoughts, opinions, or messages freely and securely. Built with a focus on privacy and simplicity, it provides a safe space for open communication and genuine feedback through a shareable link.",
     stack: [
       { name: "Next.js" },
       { name: "Mongodb" },
-      { name: "Next Auth"},
+      { name: "Next Auth" },
       { name: "Tailwind CSS" },
-      { name: "JavaScript" }
+      { name: "JavaScript" },
     ],
-    image: '/image/mystry.png',
-    live: 'https://cholo-dei-feedback.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/cholo-dei-feedback'
+    image: "/image/mystry.png",
+    imageMobile: "/image/feed-m.png",
+    live: "https://cholo-dei-feedback.vercel.app/",
+    github: "https://github.com/ahmmadSumon/cholo-dei-feedback",
   },
   {
     num: "03",
     category: "frontend",
     title: "E-commerce Website",
-    description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
+    description:
+      "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind CSS" },
-      { name: "JavaScript" }
+      { name: "JavaScript" },
     ],
-    image: '/image/11.png',
-    live: 'https://ecommercenextjs-weld.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/ecommercenextjs'
+    image: "/image/11.png",
+    imageMobile: "/image/ecom-m.png",
+    live: "https://ecommercenextjs-weld.vercel.app/",
+    github: "https://github.com/ahmmadSumon/ecommercenextjs",
   },
   {
     num: "04",
@@ -69,6 +75,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/res.png',
+     imageMobile: "/image/res.png",
     live: 'https://restaurent-nextjs.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/restaurent-nextjs'
   },
@@ -84,6 +91,7 @@ const projects = [
       { name: "GSAP" }
     ],
     image: '/image/gheebazar.png',
+     imageMobile: "/image/ghee-m.png",
     live: 'https://gheebazar.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/gheebazar'
   },
@@ -100,6 +108,7 @@ const projects = [
       { name: "GSAP" }
     ],
     image: '/image/gym1.png',
+     imageMobile: "/image/gym1.png",
     live: 'https://gym-full-stack-smn.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/gym-full-stack'
   },
@@ -116,6 +125,7 @@ const projects = [
       {name:"Lenis Smoot Scroll"}
     ],
     image: '/image/travel.png',
+     imageMobile: "/image/travel.png",
     live: 'https://smntravelx-m3wm.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/smntravelx'
   },
@@ -131,6 +141,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/irs.png',
+     imageMobile: "/image/irs.png",
     live: 'https://irs-strat-2huj.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/irs-strat/tree/main'
   },
@@ -145,6 +156,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/sohid.png',
+     imageMobile: "/image/sohid.png",
     live: 'https://shohid-nextjs.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/shohidNextjs/tree/main'
   },
@@ -162,6 +174,7 @@ const projects = [
       
     ],
     image: '/image/learn.png',
+     imageMobile: "/image/learn.png",
     live: 'https://learnwithtrends.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/learnwithtrends'
   },
@@ -176,6 +189,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/21.png',
+     imageMobile: "/image/21.png",
     live: 'https://nextjs-ecom-kappa.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nextjs-ecom/tree/main'
   },
@@ -190,6 +204,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/12.png',
+     imageMobile: "/image/12.png",
     live: 'https://nur-web.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/nur-web'
   },{
@@ -203,6 +218,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/coffee.png',
+     imageMobile: "/image/coffee.png",
     live: 'https://resturent-tau.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/resturent/tree/main'
   },
@@ -210,46 +226,57 @@ const projects = [
 
 ]
 
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (Swiper) => {
     const currentIndex = Swiper.activeIndex;
     setProject(projects[currentIndex]);
-  }
+  };
 
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
-      className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
-      <div className='container mx-auto pt-40'>
+      <div className="container mx-auto pt-40">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
-            <div className='flex flex-col gap-[30px]'>
-              <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>{project.num}</div>
-              <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
-              <h3 className='text-[36px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize'>{project.title}</h3>
-              <p className='text-white/60'>{project.description}</p>
-             <ul className='flex flex-wrap gap-2 sm:gap-3'>
-  {project.stack.map((item, index) => (
-    <li 
-      key={index} 
-      className='text-sm sm:text-base md:text-lg text-accent whitespace-nowrap'
-    >
-      {item.name}
-      {index !== project.stack.length - 1 && ","}
-    </li>
-  ))}
-</ul>
-              <div className='border border-white/20'></div>
-              <div className='flex items-center gap-4'>
+          {/* left */}
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+            <div className="flex flex-col gap-[30px]">
+              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                {project.num}
+              </div>
+              <h2 className="text-[42px] font-bold leading-none text-white capitalize">
+                {project.category} project
+              </h2>
+              <h3 className="text-[36px] font-bold leading-none text-accent capitalize">
+                {project.title}
+              </h3>
+              <p className="text-white/60">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 sm:gap-3">
+                {project.stack.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-sm sm:text-base md:text-lg text-accent whitespace-nowrap"
+                  >
+                    {item.name}
+                    {index !== project.stack.length - 1 && ","}
+                  </li>
+                ))}
+              </ul>
+              <div className="border border-white/20"></div>
+              <div className="flex items-center gap-4">
                 <Link href={project.live} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                        <BsArrowUpRight className='text-white text-3xl group-hover:text-accent' />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                         <TooltipContent>
                           <p>Live project</p>
                         </TooltipContent>
@@ -260,8 +287,8 @@ const Work = () => {
                 <Link href={project.github} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                        <BsGithub className='text-white text-3xl group-hover:text-accent' />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
                         <TooltipContent>
                           <p>GitHub repository</p>
                         </TooltipContent>
@@ -272,35 +299,50 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className='w-full xl:w-[50%]'>
-            <Swiper 
+
+          {/* right */}
+          <div className="w-full xl:w-[50%]">
+            <Swiper
               spaceBetween={30}
               slidesPerView={1}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => (
-                <SwiperSlide key={index} className='w-full'>
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
-                    <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
-                    <div className='relative w-full h-full'>
-                    
-                     
-                      <Image src={project.image} fill className='object-cover top-0'/>
-                   
+                <SwiperSlide key={index} className="w-full">
+                  <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                    <div className="h-[460px] relative group flex justify-center items-center ">
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="relative w-full h-full">
+                        {/* Desktop Image */}
+                        <Image
+                          src={project.image}
+                          fill
+                          alt={project.title}
+                          className="object-cover hidden md:block"
+                        />
+                        {/* Mobile Image */}
+                        <Image
+                          src={project.imageMobile || project.image}
+                          fill
+                          alt={project.title}
+                          className="object-cover md:hidden"
+                        />
+                      </div>
                     </div>
-                  </div>
                   </Link>
                 </SwiperSlide>
               ))}
-              <WorkSliderBtns continerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtns
+                continerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>
       </div>
     </motion.section>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
