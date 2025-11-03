@@ -75,7 +75,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/res.png',
-     imageMobile: "/image/res.png",
+     imageMobile: "/image/res-m.png",
     live: 'https://restaurent-nextjs.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/restaurent-nextjs'
   },
@@ -108,7 +108,7 @@ const projects = [
       { name: "GSAP" }
     ],
     image: '/image/gym1.png',
-     imageMobile: "/image/gym1.png",
+     imageMobile: "/image/gym-m.png",
     live: 'https://gym-full-stack-smn.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/gym-full-stack'
   },
@@ -125,7 +125,7 @@ const projects = [
       {name:"Lenis Smoot Scroll"}
     ],
     image: '/image/travel.png',
-     imageMobile: "/image/travel.png",
+     imageMobile: "/image/tra-m.png",
     live: 'https://smntravelx-m3wm.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/smntravelx'
   },
@@ -141,7 +141,7 @@ const projects = [
       { name: "JavaScript" }
     ],
     image: '/image/irs.png',
-     imageMobile: "/image/irs.png",
+     imageMobile: "/image/irs-m.png",
     live: 'https://irs-strat-2huj.vercel.app/', 
     github: 'https://github.com/ahmmadSumon/irs-strat/tree/main'
   },
@@ -188,10 +188,10 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "JavaScript" }
     ],
-    image: '/image/21.png',
-     imageMobile: "/image/21.png",
-    live: 'https://nextjs-ecom-kappa.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/nextjs-ecom/tree/main'
+    image: '/image/litchi.png',
+     imageMobile: "/image/litchi-m.png",
+    live: 'https://litchibazar.vercel.app/', 
+    github: 'https://github.com/ahmmadSumon/litchibazar'
   },
   {
     num: "12",
