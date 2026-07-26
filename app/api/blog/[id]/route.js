@@ -4,7 +4,7 @@ import Blog from "@/models/blog";
 export async function PUT(req, { params }) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
     const data = await req.json();
     const post = await Blog.findByIdAndUpdate(id, data, { new: true });
     if (!post) return Response.json({ error: "Post not found" }, { status: 404 });
@@ -17,7 +17,7 @@ export async function PUT(req, { params }) {
 export async function DELETE(req, { params }) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
     await Blog.findByIdAndDelete(id);
     return Response.json({ success: true });
   } catch (error) {

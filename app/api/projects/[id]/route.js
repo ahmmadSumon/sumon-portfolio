@@ -4,7 +4,7 @@ import Project from "@/models/project";
 export async function PUT(req, { params }) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
     const data = await req.json();
     const project = await Project.findByIdAndUpdate(id, data, { new: true });
     if (!project) {
@@ -19,7 +19,7 @@ export async function PUT(req, { params }) {
 export async function DELETE(req, { params }) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
     await Project.findByIdAndDelete(id);
     return Response.json({ success: true });
   } catch (error) {
