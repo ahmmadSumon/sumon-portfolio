@@ -1,6 +1,6 @@
 "use client"
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import "swiper/css";
@@ -10,230 +10,55 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import Link from 'next/link';
 import Image from 'next/image';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
-
-const projects = [
-  {
-    num: "01",
-    category: "Full Stack",
-    title: "Dream Team Online Earning",
-    description:
-      "Dream Team Online Earning is the best platform for online income, helping you turn your skills into a source of digital success. With hard work and patience, you can earn 15,000–20,000৳ or more every month. Join today and start building your own success story in the online world.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Mongodb" },
-      { name: "Next Auth" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-    ],
-    image: "/image/dream.png",
-    imageMobile: "/image/dream-m.png",
-    live: "https://www.dreamteamonlineearning.com/",
-    github: "https://github.com/ahmmadSumon",
-  },
-  {
-    num: "02",
-    category: "Full Stack",
-    title: "Cholo Dei Feedback",
-    description:
-      "An interactive anonymous feedback platform that allows anyone to share their honest thoughts, opinions, or messages freely and securely. Built with a focus on privacy and simplicity, it provides a safe space for open communication and genuine feedback through a shareable link.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Mongodb" },
-      { name: "Next Auth" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-    ],
-    image: "/image/mystry.png",
-    imageMobile: "/image/feed-m.png",
-    live: "https://cholo-dei-feedback.vercel.app/",
-    github: "https://github.com/ahmmadSumon/cholo-dei-feedback",
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "E-commerce Website",
-    description:
-      "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-    ],
-    image: "/image/11.png",
-    imageMobile: "/image/ecom-m.png",
-    live: "https://ecommercenextjs-weld.vercel.app/",
-    github: "https://github.com/ahmmadSumon/ecommercenextjs",
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Restaurant Website",
-    description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/res.png',
-     imageMobile: "/image/res-m.png",
-    live: 'https://restaurent-nextjs.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/restaurent-nextjs'
-  },
-    {
-    num: "05",
-    category: "frontend",
-    title: "Ghee Bazar",
-    description: "A modern and responsive Ghee Bazar e-commerce website designed to showcase premium ghee products, provide smooth online shopping, and highlight product benefits. Built with interactive animations using GSAP and fully optimized for all devices to ensure a seamless shopping experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-      { name: "GSAP" }
-    ],
-    image: '/image/gheebazar.png',
-     imageMobile: "/image/ghee-m.png",
-    live: 'https://gheebazar.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/gheebazar'
-  },
-
-    {
-    num: "06",
-    category: "frontend",
-    title: "GYM Website",
-    description: "A modern and responsive GYM website designed to promote fitness services, display class schedules, and highlight gym facilities. Built with interactive animations using GSAP and optimized for all devices to ensure a seamless user experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-      { name: "GSAP" }
-    ],
-    image: '/image/gym1.png',
-     imageMobile: "/image/gym-m.png",
-    live: 'https://gym-full-stack-smn.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/gym-full-stack'
-  },
-  {
-    num: "07",
-    category: "frontend",
-    title: "Travel Website",
-    description: "A modern travel website showcasing the best of Bangladesh, featuring destination guides, travel itineraries, and booking options. Designed with a clean and engaging interface for a seamless user experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-      {name:'GSAP'},
-      {name:"Lenis Smoot Scroll"}
-    ],
-    image: '/image/travel.png',
-     imageMobile: "/image/tra-m.png",
-    live: 'https://smntravelx-m3wm.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/smntravelx'
-  },
-  
-  {
-    num: "08",
-    category: "frontend",
-    title: "Law Service",
-    description: "A professional law service website designed to provide information about legal services, showcase case studies, and facilitate client interactions. Features a clean, responsive design for an optimal user experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/irs.png',
-     imageMobile: "/image/irs-m.png",
-    live: 'https://irs-strat-2huj.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/irs-strat/tree/main'
-  },
-  {
-    num: "09",
-    category: "frontend",
-    title: "Martyre Website",
-    description: "A memorial website dedicated to the students who tragically lost their lives during the 2024 protests in Bangladesh. The site honors their memory, provides information about the events, and offers resources for support and remembrance.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/sohid.png',
-     imageMobile: "/image/sohid.png",
-    live: 'https://shohid-nextjs.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/shohidNextjs/tree/main'
-  },
-  {
-    num: "10",
-    category: "frontend",
-    title: "Agency Website(On Going)",
-    description: "Learn with Trends is an Online Marketing Agency. The main goal of this site is to provide quality Digital Marketing Services. You can get tutorials, tips, courses, tools, and other resources that allow anyone to establish online and master digital marketing based on real case studies and deep research.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-      { name: "Framer motion" },
-      { name: "Acernity UI" },
-      
-    ],
-    image: '/image/learn.png',
-     imageMobile: "/image/learn.png",
-    live: 'https://learnwithtrends.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/learnwithtrends'
-  },
-  {
-    num: "11",
-    category: "frontend",
-    title: "E-commerce Website",
-    description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/litchi.png',
-     imageMobile: "/image/litchi-m.png",
-    live: 'https://litchibazar.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/litchibazar'
-  },
-  {
-    num: "12",
-    category: "frontend",
-    title: "Social Worker",
-    description: "A dynamic e-commerce website built with modern technologies, offering a seamless shopping experience with a responsive design and interactive features.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/12.png',
-     imageMobile: "/image/12.png",
-    live: 'https://nur-web.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/nur-web'
-  },{
-    num: "13",
-    category: "frontend",
-    title: "Restaurant Website",
-    description: "A visually appealing restaurant website designed to showcase menus, services, and ambiance. Features responsive design and interactive elements for an enhanced user experience.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" }
-    ],
-    image: '/image/coffee.png',
-     imageMobile: "/image/coffee.png",
-    live: 'https://resturent-tau.vercel.app/', 
-    github: 'https://github.com/ahmmadSumon/resturent/tree/main'
-  },
-  
-
-]
+import ProjectsSkeleton from '@/components/ProjectsSkeleton';
 
 
 const Work = () => {
-  const [project, setProject] = useState(projects[0]);
+  const [projects, setProjects] = useState([]);
+  const [filtered, setFiltered] = useState([]);
+  const [project, setProject] = useState(null);
+  const [activeCat, setActiveCat] = useState("all");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.projects) {
+          setProjects(data.projects);
+          setFiltered(data.projects);
+          setProject(data.projects[0] || null);
+        }
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  const categories = ["all", ...new Set(projects.map((p) => p.category))];
+
+  const filterProjects = (cat) => {
+    setActiveCat(cat);
+    const result = cat === "all" ? projects : projects.filter((p) => p.category === cat);
+    setFiltered(result);
+    setProject(result[0] || null);
+  };
 
   const handleSlideChange = (Swiper) => {
     const currentIndex = Swiper.activeIndex;
-    setProject(projects[currentIndex]);
+    setProject(filtered[currentIndex]);
   };
+
+  if (loading) {
+    return <ProjectsSkeleton />;
+  }
+
+  if (!project) {
+    return (
+      <section className="min-h-[80vh] flex items-center justify-center pt-40">
+        <div className="text-white/60 text-xl">No projects yet.</div>
+      </section>
+    );
+  }
 
   return (
     <motion.section
@@ -245,6 +70,23 @@ const Work = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto pt-40">
+        {/* Filter buttons */}
+        <div className="flex flex-wrap gap-3 mb-10 justify-center xl:justify-start">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => filterProjects(cat)}
+              className={`capitalize px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                activeCat === cat
+                  ? "bg-accent text-primary"
+                  : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           {/* left */}
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -260,7 +102,7 @@ const Work = () => {
               </h3>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex flex-wrap gap-2 sm:gap-3">
-                {project.stack.map((item, index) => (
+                {project.stack?.map((item, index) => (
                   <li
                     key={index}
                     className="text-sm sm:text-base md:text-lg text-accent whitespace-nowrap"
@@ -308,24 +150,24 @@ const Work = () => {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <Link href={project.live} target="_blank" rel="noopener noreferrer">
+              {filtered.map((proj, index) => (
+                <SwiperSlide key={proj._id || index} className="w-full">
+                  <Link href={proj.live} target="_blank" rel="noopener noreferrer">
                     <div className="h-[460px] relative group flex justify-center items-center ">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         {/* Desktop Image */}
                         <Image
-                          src={project.image}
+                          src={proj.image}
                           fill
-                          alt={project.title}
+                          alt={proj.title}
                           className="object-cover hidden md:block"
                         />
                         {/* Mobile Image */}
                         <Image
-                          src={project.imageMobile || project.image}
+                          src={proj.imageMobile || proj.image}
                           fill
-                          alt={project.title}
+                          alt={proj.title}
                           className="object-cover md:hidden"
                         />
                       </div>

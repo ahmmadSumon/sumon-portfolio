@@ -1,10 +1,30 @@
 import { dbConnect } from "@/lib/dbConnect";
-import Contact from "../../../models/contact";
+import Contact from "@/models/contact";
+
+const requestLog = new Map();
 
 export async function POST(req) {
   try {
-    await dbConnect();
     const data = await req.json();
+
+    // Honeypot check
+    if (data.website) {
+      return Response.json({ success: true });
+    }
+
+    // Rate limiting: max 3 messages per IP per hour
+    const ip = req.headers.get("x-forwarded-for") || "unknown";
+    const now = Date.now();
+    const windowMs = 60 * 60 * 1000;
+    const userLog = requestLog.get(ip) || [];
+    const recent = userLog.filter((t) => now - t < windowMs);
+    if (recent.length >= 3) {
+      return Response.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+    }
+    recent.push(now);
+    requestLog.set(ip, recent);
+
+    await dbConnect();
     const contact = await Contact.create(data);
 
     return Response.json({ success: true, contact });

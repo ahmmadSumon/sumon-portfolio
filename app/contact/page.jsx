@@ -46,6 +46,7 @@ const Contact = () => {
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   // handle input change
   const handleChange = (e) => {
@@ -69,6 +70,10 @@ const Contact = () => {
       return;
     }
 
+    setSubmitting(true);
+    setError("");
+    setSuccess("");
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -80,7 +85,6 @@ const Contact = () => {
 
       if (res.ok) {
         setSuccess("✅ Message sent successfully!");
-        setError("");
         setFormData({
           firstname: "",
           lastname: "",
@@ -91,11 +95,11 @@ const Contact = () => {
         });
       } else {
         setError(data.error || "Failed to send message.");
-        setSuccess("");
       }
     } catch (err) {
       setError("Something went wrong. Please try again.");
-      setSuccess("");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -154,6 +158,16 @@ const Contact = () => {
                 />
               </div>
 
+              {/* Honeypot - hidden from real users, traps bots */}
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                style={{ position: "absolute", left: "-9999px" }}
+                onChange={() => {}}
+              />
+
               <Select onValueChange={handleSelectChange}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select a service" />
@@ -187,8 +201,9 @@ const Contact = () => {
               {success && <p className="text-green-500">{success}</p>}
 
               <div className="flex items-center gap-4">
-                <Button size="md" className="max-w-40" type="submit">
-                  Submit  <FaArrowRight className=" text-xl" />
+                <Button size="md" className="max-w-40" type="submit" disabled={submitting}>
+                  {submitting ? "Sending..." : "Submit"}
+                  {!submitting && <FaArrowRight className="text-xl" />}
                 </Button>
                
               </div>

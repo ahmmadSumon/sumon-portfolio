@@ -17,19 +17,19 @@ const Footer = () => {
           <Link href="/contact" className="text-xl capitalize hover:text-accent transition-all">Contact</Link>
         </nav>
         <div className='flex items-center gap-4'>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
-            <FaTwitter size={24} />
+          <a href="https://github.com/ahmmadSumon" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
+            <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
+          <a href="https://www.linkedin.com/in/arif-ahmmad-sumon-4177bb27b/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
             <FaLinkedin size={24} />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
-            <FaGithub size={24} />
+          <a href="https://www.facebook.com/arifahmed.sumon" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all">
+            <FaTwitter size={24} />
           </a>
         </div>
       </div>
       <div className="container mx-auto text-center mt-8 text-sm text-gray-400">
-        <p>&copy; 2024 Sumon. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sumon. All rights reserved.</p>
       </div>
     </footer>
   )

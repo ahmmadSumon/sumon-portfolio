@@ -24,11 +24,14 @@ const links = [
   name:"contact",
   path: "/contact"
 },
+{
+  name:"blog",
+  path: "/blog"
+},
 
 ]
 const Nav = () => {
   const pathname = usePathname();
-  console.log(pathname)
   return (
     <div className='flex gap-8  '>
       {links.map((link, index)=>{

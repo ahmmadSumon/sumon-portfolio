@@ -2,6 +2,7 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
+import Testimonials from "@/components/Testimonials";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
@@ -97,6 +98,7 @@ export default function Home() {
         </div>
       </div>
       <Stats />
+      <Testimonials />
     </section>
   );
 }
